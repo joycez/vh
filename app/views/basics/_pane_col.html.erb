@@ -6,7 +6,11 @@
 			<b><%= item[0] %></b></br>
 			<% unless item[1].nil? or item[1].blank? %>
 				<% item[1].each do |i| %>
-					<%= i %></br>
+					<% if i.strip == 'Aronia' %>
+						<%= link_to i, "/aronia/aronia" %>
+					<% else %>
+						<%= link_to i, "#" %></br>
+					<% end %>
 				<% end %>
 			<% end %>
 		</li>
