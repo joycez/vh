@@ -1,5 +1,6 @@
 class BasicsController < ApplicationController
 
+	require "rubygems"
 	require "json"
 
 	def home
