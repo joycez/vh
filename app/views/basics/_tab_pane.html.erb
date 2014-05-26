@@ -1,0 +1,16 @@
+<% if tab == 'A' %>
+	<div class="tab-pane active" id="A">
+<% else %>
+	<div class="tab-pane" id=<%= tab %> >
+<% end %>
+		<div class="row">
+			<% if @genera_dict_split[tab].blank? or @genera_dict_split[tab].nil? %>
+				<ul>N/A</ul>
+			<% else %>
+			  <%= render partial: 'basics/pane_col', locals: {items: @genera_dict_split[tab][0]} %>
+			  <%= render partial: 'basics/pane_col', locals: {items: @genera_dict_split[tab][1]} %>
+			  <%= render partial: 'basics/pane_col', locals: {items: @genera_dict_split[tab][2]} %>
+			  <%= render partial: 'basics/pane_col', locals: {items: @genera_dict_split[tab][3]} %>
+			<% end %>
+		</div>
+	</div>

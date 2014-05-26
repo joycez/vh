@@ -1,0 +1,17 @@
+<div class="col-md-3">
+	<ul>
+	<% unless items.blank? or items.nil? %>
+	<% items.each do |item| %>
+		<li>
+			<b><%= item[0] %></b></br>
+			<% unless item[1].nil? or item[1].blank? %>
+				<% item[1].each do |i| %>
+					<%= i %></br>
+				<% end %>
+			<% end %>
+		</li>
+		</br>
+	<% end %>
+	<% end %>
+	</ul>
+</div>

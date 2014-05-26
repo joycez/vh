@@ -1,0 +1,15 @@
+<div id="homepage-list" >
+		<div class="container" id="genera-list">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs">
+			  <%= render partial: 'basics/tab', collection: @tabs %>		  				  		    
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <%= render partial: 'basics/tab_pane', collection: @tabs, as: :tab %>
+			</div>
+
+		</div>
+
+</div>
