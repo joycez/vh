@@ -1,5 +1,7 @@
 class BasicsController < ApplicationController
 
+	require "json"
+
 	def home
 		col_num = 4
 		file = File.read('lib/data.json')
