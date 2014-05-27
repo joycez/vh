@@ -5,6 +5,7 @@
 // define colors:
 $specimen-tone: rgb(211,195,172);
 $specimen-light: #f8f3ed;
+$logo: #DBC69F;
 
 
 body {
@@ -19,6 +20,19 @@ body {
 	color: white;
 	font-size: 36px;
 	font-weight: bold;
+}
+
+.logo {
+	a	{
+		color: $logo;
+		font-size: 24px;
+		font-weight: bold;
+		&:hover {
+			color: $logo;
+			text-decoration: none;
+		}
+	}
+	margin: 20px 15px 0 15px;
 }
 
 .navbar {
@@ -59,6 +73,12 @@ body {
 .header {
 	color: grey;
 	margin-bottom: 30px;
+	h1 {
+		margin: 0;
+	}
+	h3 {
+		margin-top: 10px;
+	}
 }
 
 
