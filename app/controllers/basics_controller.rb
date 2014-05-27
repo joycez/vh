@@ -1,8 +1,5 @@
 class BasicsController < ApplicationController
 
-	require "rubygems"
-	require "json"
-
 	def home
 		col_num = 4
 		file = File.read('lib/data.json')
