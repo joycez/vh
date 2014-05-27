@@ -1,0 +1,90 @@
+// Place all the styles related to the basics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// define colors:
+$specimen-tone: rgb(211,195,172);
+$specimen-light: #f8f3ed;
+
+
+body {
+	background-color: $specimen-light;
+}
+
+.homepage {
+	background-color: $specimen-light;
+}
+
+.navbar-brand {
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.navbar {
+	border: 0;
+	margin: 100px 0 0 100px;
+}
+
+#homepage-list {
+	position: relative;
+}
+
+.jumbotron{
+	background: url(/assets/oxalis.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 450px;
+	margin: 0;
+	a {
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+.tab-pane {
+	padding-top: 20px;
+}
+
+.navbar-form {
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+}
+
+#btn-search {
+	margin-bottom: -5px;
+}
+
+.header {
+	color: grey;
+	margin-bottom: 30px;
+}
+
+
+.thumbnail {
+	border-radius: 0;
+	border: 1px solid grey;
+	padding: 0;
+	.caption {
+
+		padding: 10px 0;
+		h4 { 
+			text-align: center; 
+			margin-top: 0;
+		}
+		table {
+			margin: 0 auto;
+		}
+	}
+	img {
+		width: 265px;
+		height: 380px;
+
+	}
+}
+
+#specimen-row {
+	margin: 30px 0;
+}
+
